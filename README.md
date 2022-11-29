@@ -42,7 +42,7 @@ The model was trained on 500 shoe images with below features.
 * Images with shoes facing right.
 * Cropped on the right side (front part) of the image.
 
-###########################################################################################################################################################
+#################################################################################################
 
 ## Watermark Detection - Watermark Removal
 Watermark Detaection and Removal was performed using Keras libraries and GAN generative models.
@@ -52,6 +52,7 @@ The web app was built in Python using the following libraries:
 
 ### Watermark Detection
 Object Classification was performed using CNN (Tensorflow Keras), DL model with custom trained dataset. The results are shown below:
+
 ![alt text](https://github.com/SuvarnaDalin/DL-Image_Manipulations_Demos/blob/main/Watermark/WithWat.png)
 
 ![alt text](https://github.com/SuvarnaDalin/DL-Image_Manipulations_Demos/blob/main/Watermark/WithoutWat.png)
@@ -60,12 +61,16 @@ Object Classification was performed using CNN (Tensorflow Keras), DL model with 
 Compared to the GAN generative model, better results were generated using Keras OCR. The watermarks outside the image was removed perfectly using Keras, however after removing watermarks across images the results were not perfect. The results are shown below:
 
 #### Using GAN
+
 ![alt text](https://github.com/SuvarnaDalin/DL-Image_Manipulations_Demos/blob/main/Watermark/GanFuzzyApproach.png)
 
 #### Using Keras OCR
+
 ![alt text](https://github.com/SuvarnaDalin/DL-Image_Manipulations_Demos/blob/main/Watermark/kerasWat1.png)
 
 ![alt text](https://github.com/SuvarnaDalin/DL-Image_Manipulations_Demos/blob/main/Watermark/kerasWat2.png)
+
+#################################################################################################
 
 ## Background Detector & Converter
 The web app detects whether the object in the image contains a busy or bordered background. These background based images are then converted to white background images.
@@ -73,10 +78,14 @@ The web app was built in Python using the following libraries:
 * streamlit, rembg, pandas, numpy, matplotlib, pillow, opencv, imutils, scikit-image
 
 ### Busy Background Detection & Conversion
+
 ![alt text](https://github.com/SuvarnaDalin/DL-Image_Manipulations_Demos/blob/main/Background/busy.png)
 
 ### Bordered Background Detection & Conversion
+
 ![alt text](https://github.com/SuvarnaDalin/DL-Image_Manipulations_Demos/blob/main/Background/bordered.png)
+
+#################################################################################################
 
 ## Single Or Multiple Object Detector
 This web app detects whether an image has a single object or multiple objects.
@@ -87,7 +96,9 @@ Object detection was tried using OpenCV and Keras CNN model. The OpenCV method f
 Using Keras (Tensorfow) CNN model, objects in the images were classified correctly. The model was trained using custom dataset containing multiple and single object images. 
 
 ### Single Object Detector
+
 ![alt text](https://github.com/SuvarnaDalin/DL-Image_Manipulations_Demos/blob/main/ManyVSOne/Single.png)
 
 ### Multiple Object Detector
+
 ![alt text](https://github.com/SuvarnaDalin/DL-Image_Manipulations_Demos/blob/main/ManyVSOne/Multiple.png)
