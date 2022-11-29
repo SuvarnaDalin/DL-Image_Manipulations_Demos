@@ -16,17 +16,21 @@ Detects if the object in an image is cropped or not.
 ### CROP CORRECTION/REPAIR
 DCGAN, a deep learning generative model was made use to perform image reconstruction. 4, 8 and 64 batch images were trained for 32x32 pixel images.
 The results for 4 and 8 batch training set are shown below:
+
 #### Batch 4
 ![alt text](https://github.com/SuvarnaDalin/DL-Image_Manipulations_Demos/blob/main/AutoImage_Correction/batch4.png)
 
 #### Batch 8
 ![alt text](https://github.com/SuvarnaDalin/DL-Image_Manipulations_Demos/blob/main/AutoImage_Correction/batch8.png)
+
 The training set was autocropped and resized for the above gan model. The results generated were small. 
 
-The same model was remodeled to train single batch images with 512x512 pixels. The results shown below for 100 epochs are not good enough. 
+The same model was remodeled to train single batch images with 512x512 pixels. The results shown below for 100 epochs are not good enough.
+
 ![alt text](https://github.com/SuvarnaDalin/DL-Image_Manipulations_Demos/blob/main/AutoImage_Correction/512check1.png)
 
 The GAN model was trained for 500 epochs and better results were obtained.
+
 ![alt text](https://github.com/SuvarnaDalin/DL-Image_Manipulations_Demos/blob/main/AutoImage_Correction/croprep1.png)
 
 ![alt text](https://github.com/SuvarnaDalin/DL-Image_Manipulations_Demos/blob/main/AutoImage_Correction/croprep2.png)
@@ -37,6 +41,8 @@ The model was trained on 500 shoe images with below features.
 * Images with dimensions less than 550x550.
 * Images with shoes facing right.
 * Cropped on the right side (front part) of the image.
+
+###########################################################################################################################################################
 
 ## Watermark Detection - Watermark Removal
 Watermark Detaection and Removal was performed using Keras libraries and GAN generative models.
